@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Atures';
+  src: url('../fonts/atures-regular.eot');
+  src: url('../fonts/atures-regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/atures-regular.woff2') format('woff2'),
+      url('../fonts/atures-regular.woff') format('woff'),
+      url('../fonts/atures-regular.ttf') format('truetype'),
+      url('../fonts/atures-regular.svg#Atures300PERSONALUSEONLY') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Atures';
+  src: url('../fonts/atures-thin.eot');
+  src: url('../fonts/atures-thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/atures-thin.woff2') format('woff2'),
+      url('../fonts/atures-thin.woff') format('woff'),
+      url('../fonts/atures-thin.ttf') format('truetype'),
+      url('../fonts/atures-thin.svg#Atures100PERSONALUSEONLY') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Andromeda';
+  src: url('../fonts/andromeda.eot');
+  src: url('../fonts/andromeda.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/andromeda.woff2') format('woff2'),
+      url('../fonts/andromeda.woff') format('woff'),
+      url('../fonts/andromeda.ttf') format('truetype'),
+      url('../fonts/andromeda.svg#andromeda') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trench';
+  src: url('../fonts/Trench-Thin.eot');
+  src: url('../fonts/Trench-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Trench-Thin.woff2') format('woff2'),
+      url('../fonts/Trench-Thin.woff') format('woff'),
+      url('../fonts/Trench-Thin.ttf') format('truetype'),
+      url('../fonts/Trench-Thin.svg#Trench-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.font {
+  position: absolute;
+  top: 0;
+  left: -1000px;
+
+  div:nth-of-type(1) {
+    font-family: 'Atures';
+  }
+  
+  div:nth-of-type(2) {
+    font-family: 'Andromeda';
+  }
+  
+  div:nth-of-type(3) {
+    font-family: 'Trench';
+  }
+}
+

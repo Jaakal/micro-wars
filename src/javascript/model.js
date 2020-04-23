@@ -33,12 +33,12 @@ export default class Model {
 
   set planetsArray(planetsArray) {
     this._planetsArrayStatic = planetsArray;
-    this._planetsArrayActive = planetsArray;
+    this._planetsArrayActive = planetsArray.slice();
   }
 
   get planetsArray() {
     if (this._planetsArrayActive.length === 0) {
-      this._planetsArrayActive = this._planetsArrayStatic;
+      this._planetsArrayActive = this._planetsArrayStatic.slice();
     }
 
     const planetIndex = Phaser.Math.Between(0, this._planetsArrayActive.length - 1);

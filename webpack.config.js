@@ -59,7 +59,23 @@ module.exports = {
              ]
       },
       {
-        // Now we apply rule for images
+        // Now we apply rule for html
+        test: /\.(html)$/,
+        use: [
+               {
+                 // Using file-loader for these files
+                 loader: "file-loader",
+  
+                 // In options we can set different things like format
+                 // and directory to save
+                 options: {
+                   outputPath: 'html'
+                 }
+               }
+             ]
+      },
+      {
+        // Now we apply rule for sounds
         test: /\.(wav|mp3)$/,
         use: [
                {

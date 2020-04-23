@@ -16,11 +16,12 @@ export default class MainMenu extends Phaser.Scene {
     this.background = new ScrollingBackground(this, 15);
     this.planet = new ScrollingPlanet(this, 25);
 
-    this.add.sprite(this.game.config.width * 0.5, 150, 'logo');
+    this.logo = this.add.sprite(this.game.config.width * 0.5, 200, 'logo');
+    this.logo.setScale(1);
 
     this.playButton = new Button(this, this.game.config.width * 0.5, this.game.config.height * 0.5, 'buttonNormal', 'buttonHover', 'buttonClick' , 'PLAY', 'LevelOne');
-    this.optionsButton = new Button(this, this.game.config.width * 0.5, this.game.config.height * 0.5 + 100, 'buttonNormal', 'buttonHover', 'buttonClick' , 'OPTIONS', 'Options');
-    this.leaderboardButton = new Button(this, this.game.config.width * 0.5, this.game.config.height * 0.5 + 200, 'buttonNormal', 'buttonHover', 'buttonClick' , 'LEADERBOARD', 'Leaderboard');
+    this.optionsButton = new Button(this, this.game.config.width * 0.5, this.game.config.height * 0.5 + 80, 'buttonNormal', 'buttonHover', 'buttonClick' , 'OPTIONS', 'Options');
+    this.leaderboardButton = new Button(this, this.game.config.width * 0.5, this.game.config.height * 0.5 + 160, 'buttonNormal', 'buttonHover', 'buttonClick' , 'LEADERBOARD', 'Leaderboard');
 
     if (this.model.musicOn === true && this.model.bgMusicPlaying === false) {
       this.bgMusic = this.sound.add('bgMusic', { volume: 0.3, loop: true });

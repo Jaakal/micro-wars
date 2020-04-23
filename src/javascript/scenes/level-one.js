@@ -96,7 +96,8 @@ export default class LevelOne extends Phaser.Scene {
       this.game.config.height * 0.5,
       "playerFighter"
     );
-
+    
+    window.game.input.keyboard.enabled = true;
     this.cursors = this.input.keyboard.createCursorKeys();
     this.keySpace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
@@ -112,7 +113,7 @@ export default class LevelOne extends Phaser.Scene {
         if (Phaser.Math.Between(0, 10) >= 3) {
           enemy = new GunShip(
             this,
-            Phaser.Math.Between(0, this.game.config.width),
+            Phaser.Math.Between(10, this.game.config.width - 10),
             0
           );
         } else if (Phaser.Math.Between(0, 10) >= 5) {
@@ -120,14 +121,14 @@ export default class LevelOne extends Phaser.Scene {
 
             enemy = new ChaserShip(
               this,
-              Phaser.Math.Between(0, this.game.config.width),
+              Phaser.Math.Between(15, this.game.config.width - 15),
               0
             );
           }
         } else {
           enemy = new CarrierShip(
             this,
-            Phaser.Math.Between(0, this.game.config.width),
+            Phaser.Math.Between(20, this.game.config.width - 20),
             0
           );
         }
@@ -178,7 +179,6 @@ export default class LevelOne extends Phaser.Scene {
         fill: '#3be219'
       }
     });
-    // this.scoreText.setOrigin(0.5, 0.5);
   }
 
   update() {

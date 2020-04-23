@@ -1,4 +1,6 @@
 import 'phaser';
+
+import { ScrollingBackground, ScrollingPlanet } from '../objects/background';
 import Button from '../objects/button';
 
 export default class OptionsScene extends Phaser.Scene {
@@ -8,6 +10,8 @@ export default class OptionsScene extends Phaser.Scene {
 
   create () {
     this.model = this.sys.game.globals.model;
+    this.background = new ScrollingBackground(this, 15);
+    this.planet = new ScrollingPlanet(this, 25);
 
     this.title = this.add.text(this.sys.game.config.width * 0.5, this.sys.game.config.height * 0.5 - 150, 'Options', { fontFamily: 'Andromeda', fontSize: 40, fill: '#3be219' });
     this.title.setOrigin(0.5, 0.5);
@@ -67,5 +71,10 @@ export default class OptionsScene extends Phaser.Scene {
       this.soundButton.setTexture('checkboxChecked');
       this.model.soundOn = true;
     }
+  }
+
+  update() {
+    this.background.update();
+    this.planet.update();
   }
 };

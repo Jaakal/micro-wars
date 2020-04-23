@@ -106,7 +106,7 @@ export default class LevelOne extends Phaser.Scene {
     this.enemyLasers = this.add.group();
 
     this.time.addEvent({
-      delay: 1000,
+      delay: 800,
       callback: function() {
         let enemy = null;
 
@@ -117,7 +117,7 @@ export default class LevelOne extends Phaser.Scene {
             0
           );
         } else if (Phaser.Math.Between(0, 10) >= 5) {
-          if (this.getEnemiesByType("ChaserShip").length < 5) {
+          if (this.getEnemiesByType("ChaserShip").length < 8) {
 
             enemy = new ChaserShip(
               this,

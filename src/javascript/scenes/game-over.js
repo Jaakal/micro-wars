@@ -43,7 +43,7 @@ export default class GameOver extends Phaser.Scene {
         const inputText = this.getChildByName('player-name').value;
         
         if (inputText !== '') {
-          await this.scene.score.setScore(inputText); 
+          await this.scene.score.submitScore(inputText); 
           this.scene.scene.start('Leaderboard');
         } else {
           this.scene.scene.start('MainMenu');

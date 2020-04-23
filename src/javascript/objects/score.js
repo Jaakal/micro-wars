@@ -2,10 +2,6 @@ import '../../css/enter-score.scss';
 
 import 'regenerator-runtime/runtime';
 
-/* eslint-disable import/no-unresolved */
-import $ from 'jquery';
-/* eslint-enable import/no-unresolved */
-
 export default class Score {
   constructor(scene) {
     this.scene = scene;
@@ -18,57 +14,22 @@ export default class Score {
     this._populateScoreArray();
   }
 
-  getANewAPIKey() {
-    fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/`, {
-      method: 'post',
-      body: JSON.stringify({
-        name: "Your game name"
-      }),
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-    })
-      .then(response => response.json())
-      .then(result => console.log(result));
-  }
+  // getANewAPIKey() {
+  //   fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/`, {
+  //     method: 'post',
+  //     body: JSON.stringify({
+  //       name: "Your game name"
+  //     }),
+  //     headers: {
+  //       Accept: 'application/json',
+  //       'Content-Type': 'application/json',
+  //     },
+  //   })
+  //     .then(response => response.json())
+  //     .then(result => console.log(result));
+  // }
 
-  _comparator(user1, user2) {
-    if (user1.score < user2.score){
-      return 1;
-    } else if (user1.score > user2.score){
-      return -1;
-    }
-    
-    return 0;
-  }
-
-  async _populateScoreArray() {
-    let response;
-    let data;
-
-    try {
-      response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this._gameID}/scores/`);
-      data = await response.json();
-
-      this._scoresArray = data.result.sort(this._comparator);
-      this._scoreBoardArray = this._scoresArray.slice(0, 10);
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  getScoreboard() {
-    return this._scoreBoardArray;
-  }
-
-  _updateScoreboard(score) {
-    this._scoresArray.push(score);
-    this._scoresArray.sort(this._comparator);
-    this._scoreBoardArray = this._scoresArray.slice(0, 10);
-  }
-
-  async setScore(user) {
+  async submitScore(user) {
     if (this._score !== 0 && user.length > 0) {
       try {
         await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this._gameID}/scores/`, {
@@ -85,20 +46,55 @@ export default class Score {
   
         this._updateScoreboard({user: user, score: this._score});
       } catch (error) {
-        console.error(error);
+        // console.error(error);
       }
     }
+  }
+  
+  getScore() {
+    return this._score;
   }
 
   addToScore(score) {
     this._score += score;
   }
 
-  getScore() {
-    return this._score;
-  }
-
   setScoreToZero() {
     this._score = 0;
+  }
+
+  getScoreboard() {
+    return this._scoreBoardArray;
+  }
+
+  async _populateScoreArray() {
+    let response;
+    let data;
+
+    try {
+      response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this._gameID}/scores/`);
+      data = await response.json();
+
+      this._scoresArray = data.result.sort(this._comparator);
+      this._scoreBoardArray = this._scoresArray.slice(0, 10);
+    } catch (error) {
+      // console.error(error);
+    }
+  }
+
+  _updateScoreboard(score) {
+    this._scoresArray.push(score);
+    this._scoresArray.sort(this._comparator);
+    this._scoreBoardArray = this._scoresArray.slice(0, 10);
+  }
+
+  _comparator(user1, user2) {
+    if (user1.score < user2.score){
+      return 1;
+    } else if (user1.score > user2.score){
+      return -1;
+    }
+    
+    return 0;
   }
 }

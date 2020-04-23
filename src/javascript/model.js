@@ -37,7 +37,9 @@ export default class Model {
   }
 
   get planetsArray() {
-    if (this._planetsArrayActive.length === 0) {
+    if (this._planetsArrayStatic === undefined) {
+      return undefined;
+    } else if (this._planetsArrayActive.length === 0) {
       this._planetsArrayActive = this._planetsArrayStatic.slice();
     }
 

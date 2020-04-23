@@ -14,11 +14,10 @@ class Entity extends Phaser.GameObjects.Sprite {
       // Set the texture to the explosion image, then play the animation
       const currentWidth = this.width;
 
-      this.setTexture("explosion");  // this refers to the same animation key we used when we added this.anims.create previously
+      this.setTexture("explosion");
       this.setScale(currentWidth / this.width * 2);
-      this.play("explosion"); // play the animation
-      
-      // pick a random explosion sound within the array we defined in this.sfx in SceneMain
+      this.play("explosion");
+  
       this.model = this.scene.sys.game.globals.model;
       this.model.playSound(this.scene.sfx.explosions[Phaser.Math.Between(0, this.scene.sfx.explosions.length - 1)]);
 

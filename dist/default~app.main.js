@@ -41,7 +41,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"html/29f962f99db37019904d36dbecf10308.html\");\n\n//# sourceURL=webpack:///./src/html/enter-score-form.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"29f962f99db37019904d36dbecf10308.html\");\n\n//# sourceURL=webpack:///./src/html/enter-score-form.html?");
 
 /***/ }),
 
@@ -53,7 +53,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/c4e15948b1842fb2440416ebc26155d5.png\");\n\n//# sourceURL=webpack:///./src/images/background-1280.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c4e15948b1842fb2440416ebc26155d5.png\");\n\n//# sourceURL=webpack:///./src/images/background-1280.png?");
 
 /***/ }),
 
@@ -65,7 +65,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/867c7aeb0989b26fbb9003e37fdbbe13.png\");\n\n//# sourceURL=webpack:///./src/images/button-click.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"867c7aeb0989b26fbb9003e37fdbbe13.png\");\n\n//# sourceURL=webpack:///./src/images/button-click.png?");
 
 /***/ }),
 
@@ -77,7 +77,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/bc27565b2cb655c58bff5f01c963df1c.png\");\n\n//# sourceURL=webpack:///./src/images/button-hover.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"bc27565b2cb655c58bff5f01c963df1c.png\");\n\n//# sourceURL=webpack:///./src/images/button-hover.png?");
 
 /***/ }),
 
@@ -89,7 +89,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/c39486fb90ad2dc3cf7c062fcd4b44a7.png\");\n\n//# sourceURL=webpack:///./src/images/button-normal.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c39486fb90ad2dc3cf7c062fcd4b44a7.png\");\n\n//# sourceURL=webpack:///./src/images/button-normal.png?");
 
 /***/ }),
 
@@ -101,7 +101,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/4dd4d3af1f1a403e25e465be2a5c9c0e.png\");\n\n//# sourceURL=webpack:///./src/images/checkbox-checked.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"4dd4d3af1f1a403e25e465be2a5c9c0e.png\");\n\n//# sourceURL=webpack:///./src/images/checkbox-checked.png?");
 
 /***/ }),
 
@@ -113,7 +113,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/d4855664edee7672e4c81f6c88d7af48.png\");\n\n//# sourceURL=webpack:///./src/images/checkbox-unchecked.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"d4855664edee7672e4c81f6c88d7af48.png\");\n\n//# sourceURL=webpack:///./src/images/checkbox-unchecked.png?");
 
 /***/ }),
 
@@ -125,7 +125,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/5457c5d8642544ad73ac59e40bd5610d.png\");\n\n//# sourceURL=webpack:///./src/images/enemy-carrier-sprite.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"5457c5d8642544ad73ac59e40bd5610d.png\");\n\n//# sourceURL=webpack:///./src/images/enemy-carrier-sprite.png?");
 
 /***/ }),
 
@@ -137,7 +137,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/990e6d247db4e62a6c927777339883e2.png\");\n\n//# sourceURL=webpack:///./src/images/enemy-chaser.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"990e6d247db4e62a6c927777339883e2.png\");\n\n//# sourceURL=webpack:///./src/images/enemy-chaser.png?");
 
 /***/ }),
 
@@ -149,7 +149,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/ff5ce11fa7e23dd6f62e4cb06b166f63.png\");\n\n//# sourceURL=webpack:///./src/images/enemy-fighter-sprite.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"ff5ce11fa7e23dd6f62e4cb06b166f63.png\");\n\n//# sourceURL=webpack:///./src/images/enemy-fighter-sprite.png?");
 
 /***/ }),
 
@@ -161,7 +161,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/49c5a110e0c79af88ded9502571825ad.png\");\n\n//# sourceURL=webpack:///./src/images/enemy-laser.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"49c5a110e0c79af88ded9502571825ad.png\");\n\n//# sourceURL=webpack:///./src/images/enemy-laser.png?");
 
 /***/ }),
 
@@ -173,7 +173,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/46bb54b9997cbec5a9cf49782d826669.png\");\n\n//# sourceURL=webpack:///./src/images/explosion.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"46bb54b9997cbec5a9cf49782d826669.png\");\n\n//# sourceURL=webpack:///./src/images/explosion.png?");
 
 /***/ }),
 
@@ -185,7 +185,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/1f4edc2579cb4542a9219580cf2a0c61.png\");\n\n//# sourceURL=webpack:///./src/images/micro-wars-logo2.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"1f4edc2579cb4542a9219580cf2a0c61.png\");\n\n//# sourceURL=webpack:///./src/images/micro-wars-logo2.png?");
 
 /***/ }),
 
@@ -197,7 +197,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/bf598765596f77fda54f815d598ad441.png\");\n\n//# sourceURL=webpack:///./src/images/planet1-halo.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"bf598765596f77fda54f815d598ad441.png\");\n\n//# sourceURL=webpack:///./src/images/planet1-halo.png?");
 
 /***/ }),
 
@@ -209,7 +209,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/b3003c844d88d817604f5d4b55420507.png\");\n\n//# sourceURL=webpack:///./src/images/planet2-halo.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"b3003c844d88d817604f5d4b55420507.png\");\n\n//# sourceURL=webpack:///./src/images/planet2-halo.png?");
 
 /***/ }),
 
@@ -221,7 +221,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/5c79501ddb9c8b774704912ccf53e2ec.png\");\n\n//# sourceURL=webpack:///./src/images/planet3-halo.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"5c79501ddb9c8b774704912ccf53e2ec.png\");\n\n//# sourceURL=webpack:///./src/images/planet3-halo.png?");
 
 /***/ }),
 
@@ -233,7 +233,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/2b8a2c05f5c43c76efd73e5e2aee891d.png\");\n\n//# sourceURL=webpack:///./src/images/planet4-halo.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"2b8a2c05f5c43c76efd73e5e2aee891d.png\");\n\n//# sourceURL=webpack:///./src/images/planet4-halo.png?");
 
 /***/ }),
 
@@ -245,7 +245,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/726c8a73ff8739d1a0c4bd001d6d689e.png\");\n\n//# sourceURL=webpack:///./src/images/planet5-halo.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"726c8a73ff8739d1a0c4bd001d6d689e.png\");\n\n//# sourceURL=webpack:///./src/images/planet5-halo.png?");
 
 /***/ }),
 
@@ -257,7 +257,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/2a012f234765b92cba8b12da3ef1d5a7.png\");\n\n//# sourceURL=webpack:///./src/images/planet6-halo.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"2a012f234765b92cba8b12da3ef1d5a7.png\");\n\n//# sourceURL=webpack:///./src/images/planet6-halo.png?");
 
 /***/ }),
 
@@ -269,7 +269,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/b3bb1ff1d4cb207bb5b73e2be7e36bd1.png\");\n\n//# sourceURL=webpack:///./src/images/player-fighter-sprite.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"b3bb1ff1d4cb207bb5b73e2be7e36bd1.png\");\n\n//# sourceURL=webpack:///./src/images/player-fighter-sprite.png?");
 
 /***/ }),
 
@@ -281,7 +281,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/53007f5b1a552d421a98196c9851501b.png\");\n\n//# sourceURL=webpack:///./src/images/player-laser.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"53007f5b1a552d421a98196c9851501b.png\");\n\n//# sourceURL=webpack:///./src/images/player-laser.png?");
 
 /***/ }),
 
@@ -293,7 +293,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/707e703b337a06d8bef4701a01fa285e.png\");\n\n//# sourceURL=webpack:///./src/images/scoreboard.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"707e703b337a06d8bef4701a01fa285e.png\");\n\n//# sourceURL=webpack:///./src/images/scoreboard.png?");
 
 /***/ }),
 
@@ -557,7 +557,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"sounds/43179535847fd703f7b5c6628a12f74f.mp3\");\n\n//# sourceURL=webpack:///./src/sounds/ambient-background.mp3?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"43179535847fd703f7b5c6628a12f74f.mp3\");\n\n//# sourceURL=webpack:///./src/sounds/ambient-background.mp3?");
 
 /***/ }),
 
@@ -569,7 +569,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"sounds/504e31278c0ed47e75621306d12a6abd.wav\");\n\n//# sourceURL=webpack:///./src/sounds/button-click.wav?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"504e31278c0ed47e75621306d12a6abd.wav\");\n\n//# sourceURL=webpack:///./src/sounds/button-click.wav?");
 
 /***/ }),
 
@@ -581,7 +581,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"sounds/52ce62a2da2c5c27707e3aee201b5924.wav\");\n\n//# sourceURL=webpack:///./src/sounds/button-hover.wav?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"52ce62a2da2c5c27707e3aee201b5924.wav\");\n\n//# sourceURL=webpack:///./src/sounds/button-hover.wav?");
 
 /***/ }),
 
@@ -593,7 +593,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"sounds/59054d5f02805be881c6c8fd814e7bbd.wav\");\n\n//# sourceURL=webpack:///./src/sounds/explosion-sound1.wav?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"59054d5f02805be881c6c8fd814e7bbd.wav\");\n\n//# sourceURL=webpack:///./src/sounds/explosion-sound1.wav?");
 
 /***/ }),
 
@@ -605,7 +605,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"sounds/bd193892f478770d941214338896c648.wav\");\n\n//# sourceURL=webpack:///./src/sounds/explosion-sound2.wav?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"bd193892f478770d941214338896c648.wav\");\n\n//# sourceURL=webpack:///./src/sounds/explosion-sound2.wav?");
 
 /***/ }),
 
@@ -617,7 +617,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"sounds/8ec5152f198afd33766793fbd619d39a.wav\");\n\n//# sourceURL=webpack:///./src/sounds/player-laser1.wav?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"8ec5152f198afd33766793fbd619d39a.wav\");\n\n//# sourceURL=webpack:///./src/sounds/player-laser1.wav?");
 
 /***/ }),
 
@@ -629,7 +629,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"sounds/57350f38bff80b707f802fc3ef2234b5.wav\");\n\n//# sourceURL=webpack:///./src/sounds/start-game.wav?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"57350f38bff80b707f802fc3ef2234b5.wav\");\n\n//# sourceURL=webpack:///./src/sounds/start-game.wav?");
 
 /***/ })
 

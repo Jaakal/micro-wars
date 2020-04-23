@@ -12,12 +12,6 @@ export default class MainMenu extends Phaser.Scene {
   }
 
   create() {
-    this.sys.game.globals.sfx = {
-      buttonHover: this.sound.add("buttonHover"),
-      buttonClick: this.sound.add("buttonClick"),
-      startGame: this.sound.add("startGame")
-    };
-
     this.model = this.sys.game.globals.model;
     this.background = new ScrollingBackground(this, 15);
     this.planet = new ScrollingPlanet(this, 25);

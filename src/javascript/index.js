@@ -5,7 +5,7 @@ import 'phaser';
 import 'regenerator-runtime/runtime';
 
 import config from './config/config';
-import Scoreboard from './objects/scoreboard';
+import Score from './objects/score';
 import Model from './model';
 import PreloaderScene from './scenes/preloader';
 import MainMenu from './scenes/main-menu';
@@ -18,8 +18,8 @@ class Game extends Phaser.Game {
   constructor () {
     super(config);
     const model = new Model();
-    const scoreboard = new Scoreboard();
-    this.globals = { model, scoreboard, bgMusic: null };
+    const score = new Score(this);
+    this.globals = { model, score, bgMusic: null };
     this.scene.add('PreloaderScene', PreloaderScene);
     this.scene.add('MainMenu', MainMenu);
     this.scene.add('Options', Options);

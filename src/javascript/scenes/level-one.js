@@ -86,6 +86,7 @@ export default class LevelOne extends Phaser.Scene {
     };
 
     this.model = this.sys.game.globals.model;
+    this.score = this.sys.game.globals.score;
     this.background = new ScrollingBackground(this, 15);
     this.planet = new ScrollingPlanet(this, 25);
 
@@ -167,6 +168,17 @@ export default class LevelOne extends Phaser.Scene {
         laser.destroy();
       }
     });
+
+    this.scoreText = this.make.text({
+      x: 50,
+      y: this.game.config.height - 50,
+      text: `Score: ${this.score.getScore()}`,
+      style: {
+        font: '24px Trench',
+        fill: '#3be219'
+      }
+    });
+    // this.scoreText.setOrigin(0.5, 0.5);
   }
 
   update() {
@@ -245,6 +257,8 @@ export default class LevelOne extends Phaser.Scene {
         }
       }
     }
+
+    this.scoreText.setText(`Score: ${this.score.getScore()}`);
   }
 
   getEnemiesByType(type) {
@@ -253,7 +267,7 @@ export default class LevelOne extends Phaser.Scene {
     for (let i = 0; i < this.enemies.getChildren().length; i += 1) {
       const enemy = this.enemies.getChildren()[i];
       
-      if (enemy.getData("type") == type) {
+      if (enemy.getData("type") === type) {
         arr.push(enemy);
       }
     }

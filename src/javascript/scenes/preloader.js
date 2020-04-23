@@ -41,8 +41,8 @@ export default class PreloaderScene extends Phaser.Scene {
       y: height / 2 - 50,
       text: 'Loading...',
       style: {
-        font: '20px monospace',
-        fill: '#ffffff'
+        font: '24px Trench',
+        fill: '#3be219'
       }
     });
     loadingText.setOrigin(0.5, 0.5);
@@ -52,8 +52,8 @@ export default class PreloaderScene extends Phaser.Scene {
       y: height / 2,
       text: '0%',
       style: {
-        font: '18px monospace',
-        fill: '#ffffff'
+        font: '24px Trench',
+        fill: '#3be219'
       }
     });
     percentText.setOrigin(0.5, 0.5);
@@ -63,8 +63,8 @@ export default class PreloaderScene extends Phaser.Scene {
       y: height / 2 + 50,
       text: '',
       style: {
-        font: '18px monospace',
-        fill: '#ffffff'
+        font: '24px Trench',
+        fill: '#3be219'
       }
     });
     assetText.setOrigin(0.5, 0.5);
@@ -124,7 +124,14 @@ export default class PreloaderScene extends Phaser.Scene {
     this.readyCount += 1;
 
     if (this.readyCount === 2) {
-      this.scene.start('MainMenu');
+      this.sys.game.globals.sfx = {
+        buttonHover: this.sound.add("buttonHover"),
+        buttonClick: this.sound.add("buttonClick"),
+        startGame: this.sound.add("startGame")
+      };
+
+      this.scene.start('GameOver');
+      // this.scene.start('MainMenu');
       // this.scene.start('LevelOne');
     }
   }

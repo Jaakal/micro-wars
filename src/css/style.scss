@@ -55,9 +55,10 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: white;
+  overflow-y:scroll;
 }
 
 .font {

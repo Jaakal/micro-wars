@@ -1,4 +1,5 @@
 import 'phaser';
+import GameOver from '../scenes/game-over';
 
 export default class Button extends Phaser.GameObjects.Container {
   constructor(scene, x, y, key1, key2, key3, text, targetScene) {
@@ -22,8 +23,14 @@ export default class Button extends Phaser.GameObjects.Container {
       this.button.setTexture(key3);
       this.model.playSound(this.sfx.buttonClick);
 
+      if (this.scene instanceof GameOver) {
+        this.scene.sys.game.globals.score.hideEnterScore();
+      }
+
       if (this.text['_text'] === 'PLAY') {
         this.model.playSound(this.sfx.startGame);
+        this.scene.sys.game.globals.score.submitScore = false;
+        this.scene.sys.game.globals.score.setScoreToZero();
 
         setTimeout(() => {
           this.scene.scene.start(targetScene);

@@ -16,9 +16,6 @@ export default class OptionsScene extends Phaser.Scene {
     this.musicText = this.add.text(0, this.sys.game.config.height * 0.5 - 50, 'Music Enabled', { fontFamily: 'Trench', fontSize: 30, fill: '#3be219' });
     this.musicText.setOrigin(0.5, 0.5);
     
-    // const lineWidth1 = this.musicButton.displayWidth + this.musicButton.displayWidth / 2 + this.musicText.displayWidth;
-    
-    
     this.soundButton = this.add.image(0, this.sys.game.config.height * 0.5 + 50, 'checkboxChecked');
     this.soundText = this.add.text(0, this.sys.game.config.height * 0.5 + 50, 'Sound Enabled', { fontFamily: 'Trench', fontSize: 30, fill: '#3be219' });
     this.soundText.setOrigin(0.5, 0.5);
@@ -31,8 +28,8 @@ export default class OptionsScene extends Phaser.Scene {
     this.soundButton.x = this.sys.game.config.width * 0.5 - lineWidth / 2 + this.soundButton.displayWidth / 2;
     this.soundText.x = this.sys.game.config.width * 0.5 + lineWidth / 2 - this.soundText.displayWidth / 2;
 
-    this.musicButton.setInteractive({ useHandCursor: true  });
-    this.soundButton.setInteractive({ useHandCursor: true  });
+    this.musicButton.setInteractive({ useHandCursor: true });
+    this.soundButton.setInteractive({ useHandCursor: true });
 
     this.musicButton.on('pointerdown', function () {
       this.model.musicOn = !this.model.musicOn;

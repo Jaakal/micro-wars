@@ -1,6 +1,6 @@
 # Micro Wars
 
-Micro Wars is a space shooter 2d Arcade type game.
+Micro Wars is a space shooter 2D Arcade type game.
 
 ## Screenshot
 
@@ -153,6 +153,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* Article [How to configure Webpack 4 from scratch for a basic website](https://dev.to/pixelgoo/how-to-configure-webpack-from-scratch-for-a-basic-website-46a5) used as a reference.
-* Video tutorial in [Youtube](https://www.youtube.com/watch?v=ytRnPV0kRN0) used as a reference.
-* Link to the [background image](https://unsplash.com/photos/nmpW_WwwVSc).
+* [How to configure Webpack 4 from scratch for a basic website](https://dev.to/pixelgoo/how-to-configure-webpack-from-scratch-for-a-basic-website-46a5)
+* [Webpack Tutorial for Beginners #1 - Course Files & Introduction](https://www.youtube.com/watch?v=ytRnPV0kRN0)
+* [Build a Space Shooter with Phaser 3](https://learn.yorkcs.com/category/tutorials/gamedev/phaser-3/build-a-space-shooter-with-phaser-3/)

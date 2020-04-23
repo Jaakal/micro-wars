@@ -11,78 +11,82 @@ import laserSound from '../../sounds/player-laser1.wav';
 
 import 'phaser';
 
-import { ScrollingBackground, ScrollingPlanet } from '../objects/background';
-import { Player, ChaserShip, GunShip, CarrierShip } from '../objects/entities';
+import ScrollingBackground from '../objects/background';
+import ScrollingPlanet from '../objects/planet';
+import Player from '../objects/player';
+import ChaserShip from '../objects/chasership';
+import GunShip from '../objects/gunship';
+import CarrierShip from '../objects/carriership';
 
 export default class LevelOne extends Phaser.Scene {
   constructor() {
-    super({ key: "LevelOne" });
+    super({ key: 'LevelOne' });
   }
 
   preload() {
-    this.load.spritesheet("playerFighter", playerFighter, {
+    this.load.spritesheet('playerFighter', playerFighter, {
       frameWidth: 30,
-      frameHeight: 50
+      frameHeight: 50,
     });
 
-    this.load.spritesheet("enemyFighter", enemyFighter, {
+    this.load.spritesheet('enemyFighter', enemyFighter, {
       frameWidth: 20,
-      frameHeight: 56
+      frameHeight: 56,
     });
-    this.load.spritesheet("enemyCarrier", enemyCarrier, {
+    this.load.spritesheet('enemyCarrier', enemyCarrier, {
       frameWidth: 40,
-      frameHeight: 142
+      frameHeight: 142,
     });
-    this.load.image("enemyChaser", enemyChaser);
-  
-    this.load.image("playerLaser", playerLaser);
-    this.load.image("enemyLaser", enemyLaser);
-    
-    this.load.spritesheet("explosion", explosion, {
+    this.load.image('enemyChaser', enemyChaser);
+
+    this.load.image('playerLaser', playerLaser);
+    this.load.image('enemyLaser', enemyLaser);
+
+    this.load.spritesheet('explosion', explosion, {
       frameWidth: 88,
-      frameHeight: 88
+      frameHeight: 88,
     });
 
-    this.load.audio("explosionSound1", explosionSound1);
-    this.load.audio("explosionSound2", explosionSound2);
-    this.load.audio("laserSound", laserSound);
+    this.load.audio('explosionSound1', explosionSound1);
+    this.load.audio('explosionSound2', explosionSound2);
+    this.load.audio('laserSound', laserSound);
   }
 
   create() {
     this.anims.create({
-      key: "playerFighter",
-      frames: this.anims.generateFrameNumbers("playerFighter"),
+      key: 'playerFighter',
+      frames: this.anims.generateFrameNumbers('playerFighter'),
       frameRate: 20,
-      repeat: -1
+      repeat: -1,
     });
 
     this.anims.create({
-      key: "enemyFighter",
-      frames: this.anims.generateFrameNumbers("enemyFighter"),
+      key: 'enemyFighter',
+      frames: this.anims.generateFrameNumbers('enemyFighter'),
       frameRate: 20,
-      repeat: -1
+      repeat: -1,
     });
 
     this.anims.create({
-      key: "enemyCarrier",
-      frames: this.anims.generateFrameNumbers("enemyCarrier"),
+      key: 'enemyCarrier',
+      frames: this.anims.generateFrameNumbers('enemyCarrier'),
       frameRate: 20,
-      repeat: -1
+      repeat: -1,
     });
 
     this.anims.create({
-      key: "explosion",
-      frames: this.anims.generateFrameNumbers("explosion"),
+      key: 'explosion',
+      frames: this.anims.generateFrameNumbers('explosion'),
       frameRate: 20,
-      repeat: 0
+      repeat: 0,
     });
-    
+
     this.sfx = {
       explosions: [
-        this.sound.add("explosionSound1"),
-        this.sound.add("explosionSound2")
+        this.sound.add('explosionSound1'),
+        this.sound.add('explosionSound2'),
       ],
-      laser: this.sound.add("laserSound")
+      laser: this.sound.add('laserSound'),
     };
 
     this.model = this.sys.game.globals.model;
@@ -94,9 +98,9 @@ export default class LevelOne extends Phaser.Scene {
       this,
       this.game.config.width * 0.5,
       this.game.config.height * 0.5,
-      "playerFighter"
+      'playerFighter',
     );
-    
+
     window.game.input.keyboard.enabled = true;
     this.cursors = this.input.keyboard.createCursorKeys();
     this.keySpace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
@@ -107,29 +111,28 @@ export default class LevelOne extends Phaser.Scene {
 
     this.time.addEvent({
       delay: 800,
-      callback: function() {
+      callback() {
         let enemy = null;
 
         if (Phaser.Math.Between(0, 10) >= 3) {
           enemy = new GunShip(
             this,
             Phaser.Math.Between(10, this.game.config.width - 10),
-            0
+            0,
           );
         } else if (Phaser.Math.Between(0, 10) >= 5) {
-          if (this.getEnemiesByType("ChaserShip").length < 8) {
-
+          if (this.getEnemiesByType('ChaserShip').length < 8) {
             enemy = new ChaserShip(
               this,
               Phaser.Math.Between(15, this.game.config.width - 15),
-              0
+              0,
             );
           }
         } else {
           enemy = new CarrierShip(
             this,
             Phaser.Math.Between(20, this.game.config.width - 20),
-            0
+            0,
           );
         }
 
@@ -138,32 +141,32 @@ export default class LevelOne extends Phaser.Scene {
         }
       },
       callbackScope: this,
-      loop: true
+      loop: true,
     });
 
-    this.physics.add.collider(this.playerLasers, this.enemies, function(playerLaser, enemy) {
+    this.physics.add.collider(this.playerLasers, this.enemies, (playerLaser, enemy) => {
       if (enemy) {
         if (enemy.onDestroy !== undefined) {
           enemy.onDestroy();
         }
-      
+
         enemy.explode(true);
         playerLaser.destroy();
       }
     });
 
-    this.physics.add.overlap(this.player, this.enemies, function(player, enemy) {
-      if (!player.getData("isDead") &&
-          !enemy.getData("isDead")) {
+    this.physics.add.overlap(this.player, this.enemies, (player, enemy) => {
+      if (!player.getData('isDead')
+          && !enemy.getData('isDead')) {
         player.explode(false);
         player.onDestroy();
         enemy.explode(true);
       }
     });
 
-    this.physics.add.overlap(this.player, this.enemyLasers, function(player, laser) {
-      if (!player.getData("isDead") &&
-          !laser.getData("isDead")) {
+    this.physics.add.overlap(this.player, this.enemyLasers, (player, laser) => {
+      if (!player.getData('isDead')
+          && !laser.getData('isDead')) {
         player.explode(false);
         player.onDestroy();
         laser.destroy();
@@ -176,8 +179,8 @@ export default class LevelOne extends Phaser.Scene {
       text: `Score: ${this.score.getScore()}`,
       style: {
         font: '24px Trench',
-        fill: '#3be219'
-      }
+        fill: '#3be219',
+      },
     });
   }
 
@@ -185,7 +188,7 @@ export default class LevelOne extends Phaser.Scene {
     this.background.update();
     this.planet.update();
 
-    if (!this.player.getData("isDead")) {
+    if (!this.player.getData('isDead')) {
       this.player.update();
 
       if (this.cursors.up.isDown) {
@@ -201,10 +204,10 @@ export default class LevelOne extends Phaser.Scene {
       }
 
       if (this.keySpace.isDown) {
-        this.player.setData("isShooting", true);
+        this.player.setData('isShooting', true);
       } else {
-        this.player.setData("timerShootTick", this.player.getData("timerShootDelay") - 1);
-        this.player.setData("isShooting", false);
+        this.player.setData('timerShootTick', this.player.getData('timerShootDelay') - 1);
+        this.player.setData('isShooting', false);
       }
     }
 
@@ -213,16 +216,15 @@ export default class LevelOne extends Phaser.Scene {
 
       enemy.update();
 
-      if (enemy.x < -enemy.displayWidth ||
-        enemy.x > this.game.config.width + enemy.displayWidth ||
-        enemy.y < -enemy.displayHeight * 4 ||
-        enemy.y > this.game.config.height + enemy.displayHeight) {
-    
+      if (enemy.x < -enemy.displayWidth
+        || enemy.x > this.game.config.width + enemy.displayWidth
+        || enemy.y < -enemy.displayHeight * 4
+        || enemy.y > this.game.config.height + enemy.displayHeight) {
         if (enemy) {
           if (enemy.onDestroy !== undefined) {
             enemy.onDestroy();
           }
-    
+
           enemy.destroy();
         }
       }
@@ -230,13 +232,13 @@ export default class LevelOne extends Phaser.Scene {
 
     for (let i = 0; i < this.enemyLasers.getChildren().length; i += 1) {
       const laser = this.enemyLasers.getChildren()[i];
-      
+
       laser.update();
 
-      if (laser.x < -laser.displayWidth ||
-        laser.x > this.game.config.width + laser.displayWidth ||
-        laser.y < -laser.displayHeight * 4 ||
-        laser.y > this.game.config.height + laser.displayHeight) {
+      if (laser.x < -laser.displayWidth
+        || laser.x > this.game.config.width + laser.displayWidth
+        || laser.y < -laser.displayHeight * 4
+        || laser.y > this.game.config.height + laser.displayHeight) {
         if (laser) {
           laser.destroy();
         }
@@ -245,13 +247,13 @@ export default class LevelOne extends Phaser.Scene {
 
     for (let i = 0; i < this.playerLasers.getChildren().length; i += 1) {
       const laser = this.playerLasers.getChildren()[i];
-      
+
       laser.update();
 
-      if (laser.x < -laser.displayWidth ||
-        laser.x > this.game.config.width + laser.displayWidth ||
-        laser.y < -laser.displayHeight * 4 ||
-        laser.y > this.game.config.height + laser.displayHeight) {
+      if (laser.x < -laser.displayWidth
+        || laser.x > this.game.config.width + laser.displayWidth
+        || laser.y < -laser.displayHeight * 4
+        || laser.y > this.game.config.height + laser.displayHeight) {
         if (laser) {
           laser.destroy();
         }
@@ -262,12 +264,12 @@ export default class LevelOne extends Phaser.Scene {
   }
 
   getEnemiesByType(type) {
-    let arr = [];
-    
+    const arr = [];
+
     for (let i = 0; i < this.enemies.getChildren().length; i += 1) {
       const enemy = this.enemies.getChildren()[i];
-      
-      if (enemy.getData("type") === type) {
+
+      if (enemy.getData('type') === type) {
         arr.push(enemy);
       }
     }

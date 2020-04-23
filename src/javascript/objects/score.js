@@ -15,18 +15,18 @@ export default class Score {
   }
 
   // getANewAPIKey() {
-  //   fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/`, {
+  //   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
   //     method: 'post',
   //     body: JSON.stringify({
-  //       name: "Your game name"
+  //       name: 'Your game name',
   //     }),
   //     headers: {
   //       Accept: 'application/json',
   //       'Content-Type': 'application/json',
   //     },
   //   })
-  //     .then(response => response.json())
-  //     .then(result => console.log(result));
+  //     .then((response) => response.json())
+  //     .then((result) => console.log(result));
   // }
 
   async submitScore(user) {
@@ -35,22 +35,22 @@ export default class Score {
         await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this._gameID}/scores/`, {
           method: 'post',
           body: JSON.stringify({
-            user: user,
-            score: this._score
+            user,
+            score: this._score,
           }),
           headers: {
             Accept: 'application/json',
             'Content-Type': 'application/json',
-          }
+          },
         });
-  
-        this._updateScoreboard({user: user, score: this._score});
+
+        this._updateScoreboard({ user, score: this._score });
       } catch (error) {
         // console.error(error);
       }
     }
   }
-  
+
   getScore() {
     return this._score;
   }
@@ -88,13 +88,13 @@ export default class Score {
     this._scoreBoardArray = this._scoresArray.slice(0, 10);
   }
 
-  _comparator(user1, user2) {
-    if (user1.score < user2.score){
+  static _comparator(user1, user2) {
+    if (user1.score < user2.score) {
       return 1;
-    } else if (user1.score > user2.score){
+    } if (user1.score > user2.score) {
       return -1;
     }
-    
+
     return 0;
   }
 }

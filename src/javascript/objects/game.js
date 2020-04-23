@@ -12,7 +12,7 @@ import LevelOne from '../scenes/level-one';
 import GameOver from '../scenes/game-over';
 
 export default class Game extends Phaser.Game {
-  constructor () {
+  constructor() {
     super(config);
     const model = new Model();
     const score = new Score(this);

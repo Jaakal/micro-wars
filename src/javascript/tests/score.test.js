@@ -1,3 +1,5 @@
+import 'jest';
+
 import Game from '../objects/game';
 
 let game;

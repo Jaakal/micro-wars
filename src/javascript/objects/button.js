@@ -1,5 +1,4 @@
 import 'phaser';
-import GameOver from '../scenes/game-over';
 
 export default class Button extends Phaser.GameObjects.Container {
   constructor(scene, x, y, key1, key2, key3, text, targetScene) {
@@ -8,22 +7,22 @@ export default class Button extends Phaser.GameObjects.Container {
     this.x = x;
     this.y = y;
 
-    this.button = this.scene.add.sprite(0, 0, key1).setInteractive({ useHandCursor: true  });
+    this.button = this.scene.add.sprite(0, 0, key1).setInteractive({ useHandCursor: true });
     this.button.setScale(1, 1);
     this.text = this.scene.add.text(0, 0, text, { fontFamily: 'Atures', fontSize: '20px', fill: '#37c954' });
     Phaser.Display.Align.In.Center(this.text, this.button);
- 
+
     this.add(this.button);
     this.add(this.text);
-    
+
     this.model = this.scene.sys.game.globals.model;
     this.sfx = this.scene.sys.game.globals.sfx;
 
-    this.button.on('pointerdown', function () {
+    this.button.on('pointerdown', () => {
       this.button.setTexture(key3);
       this.model.playSound(this.sfx.buttonClick);
 
-      if (this.text['_text'] === 'PLAY') {
+      if (this.text._text === 'PLAY') {
         this.model.playSound(this.sfx.startGame);
         this.scene.sys.game.globals.score.setScoreToZero();
 
@@ -33,17 +32,17 @@ export default class Button extends Phaser.GameObjects.Container {
       } else {
         this.scene.scene.start(targetScene);
       }
-    }.bind(this));
-    
-    this.button.on('pointerover', function () {
+    });
+
+    this.button.on('pointerover', () => {
       this.button.setTexture(key2);
       this.model.playSound(this.sfx.buttonHover);
-    }.bind(this));
- 
-    this.button.on('pointerout', function () {
+    });
+
+    this.button.on('pointerout', () => {
       this.button.setTexture(key1);
-    }.bind(this));
- 
+    });
+
     this.scene.add.existing(this);
   }
 }

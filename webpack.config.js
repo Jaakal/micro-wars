@@ -8,15 +8,12 @@ const sass = require('sass');
 
 module.exports = {
   mode: 'development',
-  devtool: 'eval-source-map',
   entry: {
     app: './src/javascript/index.js',
   },
-
   output: {
     path: path.resolve(process.cwd(), 'dist')
   },
-
   module: {
     rules: [
       {
@@ -124,25 +121,25 @@ module.exports = {
     ],
   },
 
-  // optimization: {
-  //   runtimeChunk: 'single',
-  //   splitChunks: {
-  //     chunks: 'all',
-  //     cacheGroups: {
-  //       default: {
-  //         enforce: true,
-  //         priority: 1,
-  //       },
-  //       vendors: {
-  //         test: /[\\/]node_modules[\\/]/,
-  //         priority: 2,
-  //         name: 'vendors',
-  //         enforce: true,
-  //         chunks: 'all',
-  //       },
-  //     },
-  //   },
-  // },
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        default: {
+          enforce: true,
+          priority: 1,
+        },
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: 2,
+          name: 'vendors',
+          enforce: true,
+          chunks: 'all',
+        },
+      },
+    },
+  },
 
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),

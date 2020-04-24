@@ -75,7 +75,7 @@ export default class Score {
       response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this._gameID}/scores/`);
       data = await response.json();
 
-      this._scoresArray = data.result.sort(this._comparator);
+      this._scoresArray = data.result.sort(this.comparator);
       this._scoreBoardArray = this._scoresArray.slice(0, 10);
     } catch (error) {
       // console.error(error);
@@ -88,10 +88,10 @@ export default class Score {
     this._scoreBoardArray = this._scoresArray.slice(0, 10);
   }
 
-  static _comparator(user1, user2) {
+  comparator(user1, user2) {
     if (user1.score < user2.score) {
       return 1;
-    } if (user1.score > user2.score) {
+    } else if (user1.score > user2.score) {
       return -1;
     }
 

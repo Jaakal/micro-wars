@@ -1,5 +1,7 @@
 # Micro Wars
 
+[Acknowledgments](##-Acknowledgments)
+
 Micro Wars is a space shooter 2D Arcade type game.
 
 ## Screenshot
@@ -93,7 +95,7 @@ if(process.env.NODE_ENV === 'production') {
 
 ## Playing The Game
 
-The goal is to collect as high score as possible through shooting enemy spaceships. Enemy fighters give 15 points, enemy carriers give 25 points and chasers give 10 points. 
+The goal is to collect as high score as possible through shooting enemy spaceships. 
 
 **Player Fighter**
 

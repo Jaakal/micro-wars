@@ -95,6 +95,25 @@ if(process.env.NODE_ENV === 'production') {
 
 The goal is to collect as high score as possible through shooting enemy spaceships. Enemy fighters give 15 points, enemy carriers give 25 points and chasers give 10 points. 
 
+**Player Fighter**
+
+![Screenshot of the player fighter](https://github.com/Jaakal/micro-wars/blob/milestone1/src/images/player-fighter-readme.png)
+
+**Points For Ships**
+
+* Enemy Chaser - 10
+
+![Screenshot of the enemy chaser](https://github.com/Jaakal/micro-wars/blob/milestone1/src/images/enemy-chaser-readme.png)
+
+* Enemy Fighter - 15
+
+![Screenshot of the enemy fighter](https://github.com/Jaakal/micro-wars/blob/milestone1/src/images/enemy-fighter-readme.png)
+
+* Enemy Carrier - 25
+
+![Screenshot of the enemy carrier](https://github.com/Jaakal/micro-wars/blob/milestone1/src/images/enemy-carrier-readme.png)
+
+
 **Move Commands**
 
 * Up Arrow Key

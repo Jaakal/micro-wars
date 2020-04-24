@@ -88,15 +88,17 @@ export default class Score {
     this._scoreBoardArray = this._scoresArray.slice(0, 10);
   }
 
+  /* eslint-disable class-methods-use-this */
   comparator(user1, user2) {
     if (user1.score < user2.score) {
       return 1;
     }
-    
+
     if (user1.score > user2.score) {
       return -1;
     }
 
     return 0;
   }
+  /* eslint-enable class-methods-use-this */
 }

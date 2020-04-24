@@ -43,8 +43,8 @@ export default class PreloaderScene extends Phaser.Scene {
       y: -5000,
       text: 'Text',
       style: {
-        font: '24px Trench'
-      }
+        font: '24px Trench',
+      },
     });
 
     const loadingText = this.make.text({

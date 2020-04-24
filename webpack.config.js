@@ -12,7 +12,7 @@ module.exports = {
     app: './src/javascript/index.js',
   },
   output: {
-    path: path.resolve(process.cwd(), 'dist')
+    path: path.resolve(process.cwd(), 'dist'),
   },
   module: {
     rules: [
@@ -148,7 +148,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/template.html'
+      template: './src/template.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css',

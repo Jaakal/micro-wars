@@ -4,6 +4,14 @@
 
 Micro Wars is a space shooter 2D Arcade type game.
 
+<div class="actions button-container">
+    <div class="button-group">
+        <a href="#screenshot" class="button">Screenshot</a>
+        <a href="#license" class="button">License</a>
+        <a href="#acknowledgments" class="button">Acknowledgments</a>
+    </div>
+</div>
+
 ## Screenshot
 
 ![Screenshot of the webpage](https://github.com/Jaakal/micro-wars/blob/milestone1/src/images/screenshot.gif)

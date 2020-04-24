@@ -1,6 +1,6 @@
 # Micro Wars
 
-[Acknowledgments](##-Acknowledgments)
+[Acknowledgments](#-Acknowledgments)
 
 Micro Wars is a space shooter 2D Arcade type game.
 

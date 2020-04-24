@@ -14,21 +14,6 @@ export default class Score {
     this._populateScoreArray();
   }
 
-  // getANewAPIKey() {
-  //   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
-  //     method: 'post',
-  //     body: JSON.stringify({
-  //       name: 'Your game name',
-  //     }),
-  //     headers: {
-  //       Accept: 'application/json',
-  //       'Content-Type': 'application/json',
-  //     },
-  //   })
-  //     .then((response) => response.json())
-  //     .then((result) => console.log(result));
-  // }
-
   async submitScore(user) {
     if (this._score !== 0 && user.length > 0) {
       try {

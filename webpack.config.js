@@ -5,9 +5,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 const sass = require('sass');
+const htmlTemplate = require('html-webpack-template');
 
 module.exports = {
   mode: 'development',
+  devtool: 'eval-source-map',
   entry: {
     app: './src/javascript/index.js',
   },
@@ -58,15 +60,10 @@ module.exports = {
         ],
       },
       {
-        // Now we apply rule for html
         test: /\.(html)$/,
         use: [
           {
-            // Using file-loader for these files
             loader: 'file-loader',
-
-            // In options we can set different things like format
-            // and directory to save
             options: {
               outputPath: 'html',
             },
@@ -74,15 +71,10 @@ module.exports = {
         ],
       },
       {
-        // Now we apply rule for sounds
         test: /\.(wav|mp3)$/,
         use: [
           {
-            // Using file-loader for these files
             loader: 'file-loader',
-
-            // In options we can set different things like format
-            // and directory to save
             options: {
               outputPath: 'sounds',
             },
@@ -90,15 +82,10 @@ module.exports = {
         ],
       },
       {
-        // Now we apply rule for images
         test: /\.(png|jpe?g|gif|svg)$/,
         use: [
           {
-            // Using file-loader for these files
             loader: 'file-loader',
-
-            // In options we can set different things like format
-            // and directory to save
             options: {
               outputPath: 'images',
             },
@@ -106,11 +93,9 @@ module.exports = {
         ],
       },
       {
-        // Apply rule for fonts files
         test: /\.(woff|woff2|ttf|otf|eot)$/,
         use: [
           {
-            // Using file-loader too
             loader: 'file-loader',
             options: {
               outputPath: 'fonts',
@@ -121,25 +106,25 @@ module.exports = {
     ],
   },
 
-  optimization: {
-    runtimeChunk: 'single',
-    splitChunks: {
-      chunks: 'all',
-      cacheGroups: {
-        default: {
-          enforce: true,
-          priority: 1,
-        },
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: 2,
-          name: 'vendors',
-          enforce: true,
-          chunks: 'all',
-        },
-      },
-    },
-  },
+  // optimization: {
+  //   runtimeChunk: 'single',
+  //   splitChunks: {
+  //     chunks: 'all',
+  //     cacheGroups: {
+  //       default: {
+  //         enforce: true,
+  //         priority: 1,
+  //       },
+  //       vendors: {
+  //         test: /[\\/]node_modules[\\/]/,
+  //         priority: 2,
+  //         name: 'vendors',
+  //         enforce: true,
+  //         chunks: 'all',
+  //       },
+  //     },
+  //   },
+  // },
 
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
@@ -148,7 +133,9 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/template.html',
+      template: htmlTemplate,
+      title: 'Micro Wars',
+      bodyHtmlSnippet: '<div class="font"><div>Text1</div><div>Text2</div><div>Text3</div></div>',
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css',

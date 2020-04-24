@@ -26,7 +26,7 @@ Clone the repository into your local computer.
 
 First you'll have to install the newest version of [Node](https://nodejs.org/en/download/). Otherwise the npx command could not be available. Then move into the project main directory on the console and follow the instructions below. 
 
-Install all packages:
+Install all the necessary packages:
 
 ```
 $ npm install
@@ -38,14 +38,13 @@ Run Webpack:
 $ npx webpack
 ```
 
-Now open the `./dist/index.html` in the browser with live server.
-
-
-You can instruct webpack to "watch" all files within your dependency graph for changes. If one of these files is updated, the code will be recompiled so you don't have to run the full build manually:
+Run Express server:
 
 ```
-$ npx webpack --watch
+node server.js
 ```
+
+Now open `http://localhost:8080/` in your browser.
 
 ### webpack.config.js
 
@@ -55,12 +54,11 @@ The main file of which the bundle is created is set in the entry:
 entry: './src/javascript/index.js'
 ```
 
-The output file of the JavaScript bundle and its name is set in the output:
+The output file of the JavaScript bundle set in the output:
 
 ```
 output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    path: path.resolve(process.cwd(), 'dist'),
   },
 ```
 

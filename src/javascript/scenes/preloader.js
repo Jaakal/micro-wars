@@ -38,6 +38,15 @@ export default class PreloaderScene extends Phaser.Scene {
     progressBox.fillStyle(0x222222, 0.8);
     progressBox.fillRect(width / 2 - 160, height / 2 - 25, 320, 50);
 
+    const fontLoaderText = this.make.text({
+      x: -5000,
+      y: -5000,
+      text: 'Text',
+      style: {
+        font: '24px Trench'
+      }
+    });
+
     const loadingText = this.make.text({
       x: width / 2,
       y: height / 2 - 50,
@@ -88,6 +97,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.on('complete', () => {
       progressBar.destroy();
       progressBox.destroy();
+      fontLoaderText.destroy();
       loadingText.destroy();
       percentText.destroy();
       assetText.destroy();

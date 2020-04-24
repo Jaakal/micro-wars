@@ -1,4 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const path = require('path');
 const webpack = require('webpack');
@@ -6,14 +8,13 @@ const sass = require('sass');
 
 module.exports = {
   mode: 'development',
+  devtool: 'eval-source-map',
   entry: {
     app: './src/javascript/index.js',
   },
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
-    filename: 'main.js',
+    path: path.resolve(process.cwd(), 'dist')
   },
 
   module: {
@@ -123,33 +124,37 @@ module.exports = {
     ],
   },
 
-  optimization: {
-    runtimeChunk: 'single',
-    splitChunks: {
-      chunks: 'all',
-      cacheGroups: {
-        default: {
-          enforce: true,
-          priority: 1,
-        },
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: 2,
-          name: 'vendors',
-          enforce: true,
-          chunks: 'all',
-        },
-      },
-    },
-  },
+  // optimization: {
+  //   runtimeChunk: 'single',
+  //   splitChunks: {
+  //     chunks: 'all',
+  //     cacheGroups: {
+  //       default: {
+  //         enforce: true,
+  //         priority: 1,
+  //       },
+  //       vendors: {
+  //         test: /[\\/]node_modules[\\/]/,
+  //         priority: 2,
+  //         name: 'vendors',
+  //         enforce: true,
+  //         chunks: 'all',
+  //       },
+  //     },
+  //   },
+  // },
 
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
   },
 
   plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/template.html'
+    }),
     new MiniCssExtractPlugin({
-      filename: 'main.css',
+      filename: 'style.css',
     }),
     new webpack.DefinePlugin({
       'typeof CANVAS_RENDERER': JSON.stringify(true),

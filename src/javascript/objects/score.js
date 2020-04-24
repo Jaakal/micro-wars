@@ -84,14 +84,16 @@ export default class Score {
 
   _updateScoreboard(score) {
     this._scoresArray.push(score);
-    this._scoresArray.sort(this._comparator);
+    this._scoresArray.sort(this.comparator);
     this._scoreBoardArray = this._scoresArray.slice(0, 10);
   }
 
   comparator(user1, user2) {
     if (user1.score < user2.score) {
       return 1;
-    } else if (user1.score > user2.score) {
+    }
+    
+    if (user1.score > user2.score) {
       return -1;
     }
 

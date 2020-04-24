@@ -3,6 +3,7 @@
 Micro Wars is a space shooter 2D Arcade type game.
 
 <div class="button-group">
+  <a href="https://jaakal.github.io/micro-wars/" class="button">Live Version</a> |
   <a href="#screenshot" class="button">Screenshot</a> |
   <a href="#getting-started" class="button">Getting Started</a> |
   <a href="#playing-the-game" class="button">Playing The Game</a> |
@@ -16,8 +17,6 @@ Micro Wars is a space shooter 2D Arcade type game.
 ## Screenshot
 
 ![Screenshot of the webpage](https://github.com/Jaakal/micro-wars/blob/milestone1/src/images/screenshot.gif)
-
-## Live version
 
 ## Getting Started
 

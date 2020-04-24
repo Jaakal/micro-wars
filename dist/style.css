@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: "Atures";
+  src: url(fonts/b40496c4f17830890949a3f15c2f6e82.eot);
+  src: url(fonts/b40496c4f17830890949a3f15c2f6e82.eot?#iefix) format("embedded-opentype"), url(fonts/e8dfe5b86de182be2d93cd1c1f757261.woff2) format("woff2"), url(fonts/00b27c192680dbb654ccb9ac42450d5c.woff) format("woff"), url(fonts/5f7e687905804dbffa1524c4ed1fb23f.ttf) format("truetype"), url(images/92b44171be13e9a9db636d2764c33a26.svg#Atures300PERSONALUSEONLY) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Atures";
+  src: url(fonts/df7477ba92414274c3ed19e7ce66e377.eot);
+  src: url(fonts/df7477ba92414274c3ed19e7ce66e377.eot?#iefix) format("embedded-opentype"), url(fonts/bd3058efb89298d3784a46df139e109b.woff2) format("woff2"), url(fonts/d74a61f37bb68f3640062c19be3f211b.woff) format("woff"), url(fonts/2cc54af1710debb5ad45aafa9f3fb552.ttf) format("truetype"), url(images/96e1412066856ac41451b6f61b9951cf.svg#Atures100PERSONALUSEONLY) format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Andromeda";
+  src: url(fonts/2a56db0dd3488d0a47d36a1145d33db9.eot);
+  src: url(fonts/2a56db0dd3488d0a47d36a1145d33db9.eot?#iefix) format("embedded-opentype"), url(fonts/ad532b5e289e22fad495140f9484062d.woff2) format("woff2"), url(fonts/de7646e06148f984a45fb2a400ed3699.woff) format("woff"), url(fonts/62116bcda348525dcbd2884b84755870.ttf) format("truetype"), url(images/1258ac70cc466f732d377db5dd46bf83.svg#andromeda) format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Trench";
+  src: url(fonts/eabe2723c2b39e4cde8f0defa4f6352a.eot);
+  src: url(fonts/eabe2723c2b39e4cde8f0defa4f6352a.eot?#iefix) format("embedded-opentype"), url(fonts/0e2bec3f4e2e4048dc612bc90dd74931.woff2) format("woff2"), url(fonts/27893c1da7f7e77a94b23cb4978ff8dc.woff) format("woff"), url(fonts/ef993e5e5987876284da3770c4335d57.ttf) format("truetype"), url(images/05dea50e06b9bb35fd8c896dc2c2ca34.svg#Trench-Thin) format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.font {
+  position: absolute;
+  top: 0;
+  left: -1000px;
+}
+.font div:nth-of-type(1) {
+  font-family: "Atures";
+}
+.font div:nth-of-type(2) {
+  font-family: "Andromeda";
+}
+.font div:nth-of-type(3) {
+  font-family: "Trench";
+}
+.enter-score {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-5000px);
+  opacity: 0;
+}
+.enter-score .score {
+  font-family: "Trench";
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  color: #3be219;
+}
+.enter-score label {
+  margin-bottom: 5px;
+  font-family: "Trench";
+  font-size: 30px;
+  color: #3be219;
+}
+.enter-score .input-wrapper {
+  display: flex;
+  align-items: center;
+}
+.enter-score input[type=text] {
+  padding: 4px 6px;
+  font-family: "Trench";
+  font-size: 25px;
+  border: 2px solid #1dffff;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  color: #3be219;
+}
+.enter-score button {
+  height: 37px;
+  padding: 0px 28px;
+  margin-left: 10px;
+  font-family: "Atures";
+  font-size: 18px;
+  border: 2px solid #1dffff;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  color: #3be219;
+}
+.enter-score button:hover {
+  box-shadow: 0 0 4px #1dffff, inset 0 0 2px #1dffff;
+  text-shadow: 0 0 4px #3be219, 0 0 6px #3be219;
+  cursor: pointer;
+}
+
+.display-enter-score {
+  transform: translateX(0);
+  opacity: 1;
+}

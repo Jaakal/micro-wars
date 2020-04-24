@@ -1,15 +1,16 @@
 # Micro Wars
 
-[Acknowledgments](#acknowledgments)
-
 Micro Wars is a space shooter 2D Arcade type game.
 
-<div class="actions button-container">
-    <div class="button-group">
-        <a href="#screenshot" class="button">Screenshot</a>
-        <a href="#license" class="button">License</a>
-        <a href="#acknowledgments" class="button">Acknowledgments</a>
-    </div>
+<div class="button-group">
+  <a href="#screenshot" class="button">Screenshot</a>|
+  <a href="#getting-started" class="button">Getting Started</a>|
+  <a href="#playing-the-game" class="button">Playing The Game</a>|
+  <a href="#built-width" class="button">Built With</a>|
+  <a href="#assets" class="button">Assets</a>|
+  <a href="#authors" class="button">Authors</a>|
+  <a href="#license" class="button">License</a>|
+  <a href="#acknowledgments" class="button">Acknowledgments</a>
 </div>
 
 ## Screenshot

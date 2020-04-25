@@ -39,7 +39,7 @@ $ npm install
 To be sure, that npm is able to run scripts, lets set the `ignore-scripts` configuration key to false:
 
 ```
-npm config set ignore-scripts false
+$ npm config set ignore-scripts false
 ```
 
 > You can find the scripts in the `package.json` file in the `scripts` section.
@@ -55,7 +55,7 @@ $ npm start
 Run Jest test runner:
 
 ```
-npm test
+$ npm test
 ```
 
 ### webpack.config.js

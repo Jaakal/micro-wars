@@ -70,11 +70,9 @@ The output file name of the CSS bundle is set in the plugins:
 
 ```
 plugins: [
-  
     new MiniCssExtractPlugin({
       filename: "main.css"
     })
-  
   ]
 ```
 

@@ -28,7 +28,7 @@ Clone the repository into your local computer.
 
 ### Installing
 
-First you'll have to install the newest version of [Node](https://nodejs.org/en/download/). Otherwise the npx command could not be available. Then move into the project main directory on the console and follow the instructions below. 
+First you'll have to install the newest version of [Node](https://nodejs.org/en/download/). Then move into the project main directory on the console and follow the instructions below. 
 
 Install all the necessary packages:
 
@@ -42,12 +42,12 @@ To be sure, that npm is able to run scripts, lets set the `ignore-scripts` confi
 npm config set ignore-scripts false
 ```
 
-> You can find the scripts from `package.json` file in the `scripts` sections.
+> You can find the scripts in the `package.json` file in the `scripts` section.
 
 Build and open up the app in the browser:
 
 ```
-$ npx start
+$ npm start
 ```
 
 ### Testing

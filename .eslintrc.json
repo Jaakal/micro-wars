@@ -15,6 +15,7 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
+    "ignorePatterns": ["dist/", "node_modules/", "test/"],
     "rules": {
       "no-shadow": "off",
       "no-param-reassign": "off",

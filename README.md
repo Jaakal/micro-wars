@@ -36,19 +36,27 @@ Install all the necessary packages:
 $ npm install
 ```
 
-Run Webpack:
+To be sure, that npm is able to run scripts, lets set the `ignore-scripts` configuration key to false:
 
 ```
-$ npx webpack
+npm config set ignore-scripts false
 ```
 
-Run Express server:
+> You can find the scripts from `package.json` file in the `scripts` sections.
+
+Build and open up the app in the browser:
 
 ```
-node server.js
+$ npx start
 ```
 
-Now open `http://localhost:8080/` in your browser.
+### Testing
+
+Run Jest test runner:
+
+```
+npm test
+```
 
 ### webpack.config.js
 

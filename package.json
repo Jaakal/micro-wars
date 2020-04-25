@@ -4,11 +4,12 @@
   "description": "Space shooter game created using Phaser",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "npm run dev && open-cli http://localhost:8080 && node server.js",
     "heroku-postbuild": "webpack -p",
     "test": "jest",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/dist/index.html\""
   },
   "keywords": [],
   "author": "Jaak Kivinukk",
@@ -51,6 +52,7 @@
     "jest-canvas-mock": "^2.2.0",
     "jquery": "^3.5.0",
     "mini-css-extract-plugin": "^0.9.0",
+    "open-cli": "^6.0.1",
     "postcss-loader": "^3.0.0",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",

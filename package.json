@@ -8,8 +8,7 @@
     "heroku-postbuild": "webpack -p",
     "test": "jest",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/dist/index.html\""
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "Jaak Kivinukk",

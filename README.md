@@ -50,14 +50,6 @@ Build and open up the app in the browser:
 $ npm start
 ```
 
-### Testing
-
-Run Jest test runner:
-
-```
-$ npm test
-```
-
 ### webpack.config.js
 
 The main file of which the bundle is created is set in the entry:
@@ -110,6 +102,28 @@ if(process.env.NODE_ENV === 'production') {
 ```
 
 [From Webpack documentation:](https://webpack.js.org/guides/production/) Technically, NODE_ENV is a system environment variable that Node.js exposes into running scripts. It is used by convention to determine dev-vs-prod behavior by server tools, build scripts, and client-side libraries. Contrary to expectations, process.env.NODE_ENV **is not set to "production"** within the build script webpack.config.js. Thus, conditionals like `process.env.NODE_ENV === 'production' ? '[name].[hash].bundle.js' : '[name].bundle.js'` within webpack configurations do not work as expected.
+
+### Testing
+
+Run Jest test runner:
+
+```
+$ npm test
+```
+
+### ESLint
+
+Run the command:
+
+```
+npx eslint .
+```
+
+ESLint has the auto fix option as well, for that you'll have to run the command:
+
+```
+npx eslint . --fix
+```
 
 ## Playing The Game
 

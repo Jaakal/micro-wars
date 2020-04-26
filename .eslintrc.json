@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "ignorePatterns": ["dist/", "node_modules/", "test/"],
+    "rules": {
+      "no-shadow": "off",
+      "no-param-reassign": "off",
+      "eol-last": "off",
+      "arrow-parens": "off",
+      "no-undef": "off",
+      "no-unused-expressions": "off",
+      "import/no-unresolved": "off",
+      "no-underscore-dangle": "off",
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+    },
+    "overrides": [
+        {
+          "files": [
+            "**/*.test.js",
+            "**/*.test.jsx"
+          ],
+          "env": {
+            "jest": true
+          }
+        }
+      ]
+}

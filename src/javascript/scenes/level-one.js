@@ -98,7 +98,8 @@ export default class LevelOne extends Phaser.Scene {
       this,
       this.game.config.width * 0.5,
       this.game.config.height * 0.5,
-      'playerFighter',
+      'enemyChaser',
+      'clockwise'
     );
 
     window.game.input.keyboard.enabled = true;

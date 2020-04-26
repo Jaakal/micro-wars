@@ -31,7 +31,7 @@ export default class ChaserShip extends Entity {
 
         const angle = Math.atan2(dy, dx);
 
-        const speed = 100;
+        const speed = 120;
         this.body.setVelocity(
           Math.cos(angle) * speed,
           Math.sin(angle) * speed,

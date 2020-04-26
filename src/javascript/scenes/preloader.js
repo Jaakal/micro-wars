@@ -132,7 +132,7 @@ export default class PreloaderScene extends Phaser.Scene {
         startGame: this.sound.add('startGame'),
       };
 
-      this.scene.start('MainMenu');
+      this.scene.start('LevelOne');
     }
   }
 }

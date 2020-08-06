@@ -12,7 +12,7 @@ export default class OptionsScene extends Phaser.Scene {
   create() {
     this.model = this.sys.game.globals.model;
     this.background = new ScrollingBackground(this, 15);
-    this.planet = new ScrollingPlanet(this, 25);
+    this.planet = new ScrollingPlanet(this, 55);
 
     this.title = this.add.text(this.sys.game.config.width * 0.5,
       this.sys.game.config.height * 0.5 - 150, 'Options',

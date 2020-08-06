@@ -16,7 +16,10 @@ export default class Game extends Phaser.Game {
     super(config);
     const model = new Model();
     const score = new Score(this);
-    this.globals = { model, score, bgMusic: null };
+    const background = { 
+      planet: { xPosition: undefined, yPosition: undefined, name: undefined },
+      space:  { yPosition1: undefined, yPosition2: undefined } };
+    this.globals = { model, score, background, bgMusic: null };
     this.scene.add('PreloaderScene', PreloaderScene);
     this.scene.add('MainMenu', MainMenu);
     this.scene.add('Options', Options);

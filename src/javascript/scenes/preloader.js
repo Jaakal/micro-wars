@@ -9,9 +9,9 @@ import planet6 from '../../images/planet6-halo.png';
 import buttonNormal from '../../images/button-normal.png';
 import buttonHover from '../../images/button-hover.png';
 import buttonClick from '../../images/button-click.png';
-import checkboxChecked from '../../images/checkbox-checked.png';
-import checkboxUnchecked from '../../images/checkbox-unchecked.png';
-import scoreboard from '../../images/scoreboard.png';
+import checkboxChecked from '../../images/checkbox-checked-antialiased.png';
+import checkboxUnchecked from '../../images/checkbox-unchecked-antialiased.png';
+import scoreboard from '../../images/scoreboard-antialiased.png';
 import buttonHovered from '../../sounds/button-hover.wav';
 import buttonClicked from '../../sounds/button-click.wav';
 import startGame from '../../sounds/start-game.wav';
@@ -132,7 +132,7 @@ export default class PreloaderScene extends Phaser.Scene {
         startGame: this.sound.add('startGame'),
       };
 
-      this.scene.start('LevelOne');
+      this.scene.start('MainMenu');
     }
   }
 }

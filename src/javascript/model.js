@@ -50,6 +50,10 @@ export default class Model {
     return planetString;
   }
 
+  planetInIndex(index) {
+    return this._planetsArrayStatic[index];
+  }
+
   playSound(sound) {
     if (this._soundOn) {
       sound.play();

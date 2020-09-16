@@ -1,6 +1,6 @@
 # Micro Wars
 
-Micro Wars is a space shooter 2D Arcade type game.
+Micro Wars is a space shooter 2D Arcade type game created with Phaser 3 framework.
 
 <div class="button-group">
   <a href="https://jaakal.github.io/micro-wars/" class="button">Live Version</a> |
